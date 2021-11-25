@@ -19,7 +19,7 @@
                     <input type="text" placeholder="Correo Electronico" style="text-align:center;border-radius:8px;" class="container-md" name="Correo" required><br><br>
                     <h5> Contraseña: </h5>
                     <input type="password" placeholder="Contraseña" style="text-align:center;border-radius:8px;" class="container-md" name="Contra" required><br><br>
-                    <legend > ¿No tienes cuenta? Registrate <a href="?controlador=pagina&accion=registrarusuario">aquí</a></legend><br>
+                    <legend > ¿No tienes cuenta? Registrate <a href="?controlador=pagina&accion=registrarusuario">aquí está el enlace, qliao</a></legend><br>
                     <input type="submit" name="entrar" value="Ingresar" class="btn btn-light container-md" style="width:30%;"><br><br>           
                     <?php 
                         include_once ('modelo/ControladorUsuario/Sesion.php');
