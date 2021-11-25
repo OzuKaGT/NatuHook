@@ -55,9 +55,9 @@ include '../../modelo/ControladorNatural/DatosNAController.php';
         <form action="../../modelo/ControladorNatural/EditarZonaNController.php" method="POST" class="formularioT">
             <legend class="TituloReg">&nbsp Registrar Zona Natural</legend>
             <p id="textopq">&nbsp&nbsp&nbsp&nbsp  Es rapido y facil </p>
-            <input type="text" placeholder=" Nombre " name="nombre" class="cajitasW" value="<?php echo $resultado->Nombre ?>"><br><br>
-            <input type="text" placeholder=" Ubicacion " name="ubicacion" class="cajitasW" value="<?php echo $resultado->Ubicacion ?>"><br><br>
-            <input type="text" placeholder="Descripcion" name="descrip" style="width:30%;height:80px;" value="<?php echo $resultado->Descripcion ?>"><br><br>
+            <input type="text" placeholder=" Nombre " name="nombre" class="cajitasW" value="<?php echo $resultado->Nombre ?>" pattern="[A-Za-z0-9 ]{1,100}"><br><br>
+            <input type="text" placeholder=" Ubicacion " name="ubicacion" class="cajitasW" value="<?php echo $resultado->Ubicacion ?>" pattern="[A-Za-z0-9 ]{1,100}"><br><br>
+            <input type="text" placeholder="Descripcion" name="descrip" style="width:30%;height:80px;" value="<?php echo $resultado->Descripcion ?>" pattern="[A-Za-z0-9 ]{1,250}"><br><br>
             <input type="text" placeholder=" URL Imagen " name="image" class="cajitasW" value="<?php echo $resultado->Imagen ?>"><br><br>
             <input type="submit" name="registro" value="Actualizar" class="btn btn-success"><br><br>
             <input type="hidden" name="oculto">
